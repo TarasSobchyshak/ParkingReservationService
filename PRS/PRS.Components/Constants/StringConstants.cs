@@ -2,7 +2,7 @@
 {
     public static class StringConstants
     {
-        public const string ConnectionString = "ParkingReservationServiceConnectionString";
-        public const string LogManager = "LogManagerName";
+        public static string ConnectionString => "ParkingReservationService_ConnectionString";
+        public static string LogManager => "LogManagerName";
     }
 }

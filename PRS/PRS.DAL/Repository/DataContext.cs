@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using PRS.Components.Constants;
+using System.Configuration;
 using System.Data.Entity;
 
 namespace PRS.DAL.Repository
@@ -24,12 +25,13 @@ namespace PRS.DAL.Repository
         {
             get
             {
-                var temp = ConfigurationManager.ConnectionStrings["TimeBookingToolConnectionString"];
+                var temp = ConfigurationManager.ConnectionStrings[StringConstants.ConnectionString];
                 if (temp != null)
                 {
-                    return ConfigurationManager.ConnectionStrings["TimeBookingToolConnectionString"].ConnectionString;
+                    return ConfigurationManager.ConnectionStrings[StringConstants.ConnectionString].ConnectionString;
                 }
-                return "TimeBookingToolConnectionString";
+
+                return string.Empty;
             }
         }
     }
