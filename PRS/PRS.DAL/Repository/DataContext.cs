@@ -1,4 +1,5 @@
 ﻿using PRS.Components.Constants;
+using PRS.DAL.Entities;
 using System.Configuration;
 using System.Data.Entity;
 
@@ -33,6 +34,20 @@ namespace PRS.DAL.Repository
 
                 return string.Empty;
             }
+        }
+
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<Parking> Parkings { get; set; }
+        public DbSet<ParkingSpot> ParkingSpots { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<User> Users { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+
         }
     }
 }

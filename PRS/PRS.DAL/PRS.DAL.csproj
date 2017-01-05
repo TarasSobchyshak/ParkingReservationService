@@ -66,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Organization.cs" />
+    <Compile Include="Entities\Parking.cs" />
+    <Compile Include="Entities\ParkingSpot.cs" />
+    <Compile Include="Entities\Transaction.cs" />
+    <Compile Include="Entities\Reservation.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Base\Implementations\RepositoryT.cs" />
     <Compile Include="Repository\Base\Implementations\Repository.cs" />
@@ -78,9 +84,7 @@
     <Compile Include="Repository\Implementations\ApplicationUnitOfWork.cs" />
     <Compile Include="Repository\Interfaces\IApplicationUnitOfWork.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
