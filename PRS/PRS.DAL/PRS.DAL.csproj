@@ -69,6 +69,8 @@
     <Compile Include="Entities\Organization.cs" />
     <Compile Include="Entities\Parking.cs" />
     <Compile Include="Entities\ParkingSpot.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\RoleExtension.cs" />
     <Compile Include="Entities\Transaction.cs" />
     <Compile Include="Entities\Reservation.cs" />
     <Compile Include="Entities\User.cs" />

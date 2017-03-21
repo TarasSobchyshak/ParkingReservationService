@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PRS.Business.Models;
+using PRS.DAL.Entities;
 
 namespace PRS.Business.Infrastructure.ProfileMappers
 {
